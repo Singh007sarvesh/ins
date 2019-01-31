@@ -5,7 +5,7 @@ from userdetail.models import User, Vehicle
 class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = User
-		fields = ('state','gender','first_name','last_name')
+		fields = ('user_name','state','gender','first_name','last_name')
 
 class UserVehicle(serializers.ModelSerializer):
 	class Meta:
